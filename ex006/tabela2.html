@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela 2</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            margin: 40px 360px 0;
+            padding: 10px;
+            text-align: center;
+
+            border-radius: 15px;
+            background-color: burlywood;
+        }
+
+        h1,
+        caption,
+        small {
+            font-variant: small-caps;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 1.5rem;
+            word-spacing: 9px;
+            letter-spacing: 3px;
+        }
+
+        table {
+            margin: 100px auto 50px;
+            border-collapse: collapse;
+        }
+
+        thead>tr>th {
+            background-color: chocolate;
+            padding: 2px 0;
+        }
+
+        thead>tr>th:nth-child(1) {
+            background-color: lightskyblue;
+        }
+
+        thead>tr>th:nth-child(2) {
+            width: 150px;
+        }
+
+        #mulheres {
+            background-color: rgb(236, 32, 255);
+        }
+
+        #homens {
+            background-color: rgb(0, 68, 255);
+        }
+
+        th,
+        td {
+            height: 25px;
+            width: 120px;
+            border: solid 2px black;
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabela usando ColSpan e RowSpan</h1>
+
+    <table>
+        <caption>Desafio Tabela 1 <small>(Vídeo 34)</small></caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Desafio Tabela 2 <small>(Vídeo 34)</small></caption>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Desafio Tabela 3 <small>(Vídeo 35 Módulo 3)</small></caption>
+        <thead>
+            <tr>
+                <th scope="col row">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3" id="mulheres">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3" id="homens">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Stars Wars V</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
